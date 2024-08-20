@@ -1,11 +1,11 @@
 import "@styles/globals.css";
-import Nav from "@components/Nav";
+import Nav from "@components/NavBar";
 import Provider from "@components/Provider";
+import Footer from "@components/Footer/FooterComponent";
 
 export const metadata = {
   title: "FBA Finance",
   description: "Building businesses,one pool at a time",
-  favicon: "/favicon.ico",
 };
 
 const RootLayout = ({ children }) => {
@@ -20,6 +20,8 @@ const RootLayout = ({ children }) => {
           <main className="app">
             <Nav />
             {children}
+
+            <Footer />
           </main>
         </Provider>
       </body>

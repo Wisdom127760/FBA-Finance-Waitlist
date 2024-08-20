@@ -34,9 +34,9 @@ const Nav = () => {
 
       {/* Desktop Navigation */}
 
-      <NavPanel />
+      <NavPanel className="sm:hidden flex relative" />
 
-      <div className="sm:flex hidden">
+      {/* <div className="sm:flex hidden">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" className="black_btn">
@@ -69,16 +69,26 @@ const Nav = () => {
                   }}
                   className="gap-4 self-stretch px-4 py-2.5 my-auto text-white bg-indigo-600 rounded-lg"
                 >
-                  Join the Waitlist
+                  Get Early Access
                 </button>
               ))}
           </>
         )}
-      </div>
+      </div> */}
+
+      <button
+        type="button"
+        onClick={() => {
+          "";
+        }}
+        className="gap-4 self-stretch px-4 py-2.5 my-auto text-white bg-indigo-600 rounded-lg"
+      >
+        Get Early Access
+      </button>
 
       {/* Mobile Navigation */}
       <div className="sm:hidden flex relative">
-        {session?.user ? (
+        {/* {session?.user ? (
           <div className="flex">
             <Image
               src={session?.user.image}
@@ -130,11 +140,11 @@ const Nav = () => {
                   }}
                   className="gap-4 self-stretch px-4 py-2.5 my-auto text-white bg-indigo-600 rounded-lg"
                 >
-                  Join the Waitlist
+                  Get Early Access
                 </button>
               ))}
           </>
-        )}
+        )} */}
       </div>
     </nav>
   );

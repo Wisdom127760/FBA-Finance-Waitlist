@@ -10,7 +10,7 @@ function HeroSection() {
         </span>
         .{" "}
       </h1>
-      <p className="self-stretch px-3 py-1 mt-3 text-2xl border-l-4 border-violet-400 border-solid border-l-violet-400 text-neutral-600 max-md:max-w-full">
+      <p className="self-stretch px-3 py-1 mt-3 text-xl border-l-4 border-violet-300 border-solid border-l-violet-300 text-neutral-600 max-md:max-w-full">
         No Equity Dilution. Flexible Repayment Terms.
       </p>
     </div>
