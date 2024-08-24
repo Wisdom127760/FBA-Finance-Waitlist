@@ -16,7 +16,10 @@ const LastFooter = () => {
             </a>
           </li>
           <li class="mx-4">
-            <a href="#" class="text-black-100 hover:text-violet-600">
+            <a
+              href="https://app.gitbook.com/o/8LAbjlDOettEqKUnqAst/s/qAnTc1DM8Xi6U7DJ8zm6/~/changes/1/readme/fba-finance-or-privacy-policy"
+              class="text-black-100 hover:text-violet-600"
+            >
               Privacy Policy
             </a>
           </li>

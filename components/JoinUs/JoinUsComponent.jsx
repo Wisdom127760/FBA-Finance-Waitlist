@@ -39,7 +39,7 @@ function JoinUsSection() {
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="relative z-10 flex flex-col items-center w-full">
+      <div className="relative flex flex-col items-center w-full">
         <h2 className="text-center px-6 max-w-full text-4xl font-bold text-white w-[286px] max-md:pl-5">
           Join Us Today
         </h2>
@@ -52,7 +52,7 @@ function JoinUsSection() {
             <FeatureCard key={index} {...feature} />
           ))}
         </div>
-        <button className="gap-4 px-4 py-2.5 mt-6 max-w-full font-semibold bg-white rounded-lg text-zinc-800 w-[425px]">
+        <button className="gap-4 px-4 py-2.5 mt-6 max-w-full font-semibold bg-white rounded-lg text-zinc-800 w-[425px] transition duration-300 ease-in-out transform hover:scale-105">
           Find out more about business loans
         </button>
       </div>

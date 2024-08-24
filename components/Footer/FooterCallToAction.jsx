@@ -1,16 +1,32 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Modal from "@components/Modal"; // Assuming you have a Modal component
+import GoogleForm from "@app/create-form/GoogleForm";
 
 const FooterCallToAction = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  const openGoogleForm = () => {
+    window.open("https://forms.gle/n2795F4jih9Kf792A", "_blank");
+  };
   return (
     <div className="flex gap-5 items-start max-sm:hidden">
-      <input
-        type="text"
-        className="gap-4 self-stretch px-4  text-black text-sm font-normal bg-white border border-indigo-100 rounded-lg w-[400px]"
-        placeholder="Enter your email"
-      />
-      <button className="gap-4 self-stretch px-4  text-base text-white bg-indigo-600 rounded-lg w-[258px]">
+      <button
+        onClick={openGoogleForm}
+        className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
+      >
         Get Early Access
       </button>
+      <Modal isOpen={showModal} onClose={handleCloseModal}>
+        <GoogleForm onClose={handleCloseModal} />
+      </Modal>
     </div>
   );
 };

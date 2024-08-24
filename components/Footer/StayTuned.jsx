@@ -20,7 +20,7 @@ const StayTuned = () => {
       <div className="flex gap-9 self-start mt-8 whitespace-nowrap">
         <Link
           href="https://www.linkedin.com/company/fba-finance/"
-          className="flex gap-2 flex-center"
+          className="flex gap-2 flex-center transform hover:scale-105 hover:text-violet-400"
           target="_blank"
         >
           <Image
@@ -33,7 +33,7 @@ const StayTuned = () => {
         </Link>
         <Link
           href="https://x.com/FBA_finance?t=HFkPHPPsLVB-gcWTAykD-A&s=09"
-          className="flex gap-2 flex-center"
+          className="flex gap-2 flex-center transform hover:scale-105 hover:text-violet-400"
           target="_blank"
         >
           <Image
@@ -46,7 +46,7 @@ const StayTuned = () => {
         </Link>
         <Link
           href="https://discord.gg/DA9RTJPN"
-          className="flex gap-2 flex-center"
+          className="flex gap-2 flex-center transform hover:scale-105"
           target="_blank"
         >
           <Image

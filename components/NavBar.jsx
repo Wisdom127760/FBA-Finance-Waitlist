@@ -3,9 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import NavPanel from "@components/NavPanel";
+import Modal from "./Modal";
+import GoogleForm from "../app/create-form/GoogleForm";
 
 const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,6 +32,10 @@ const NavBar = () => {
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
+  };
+
+  const openGoogleForm = () => {
+    window.open("https://forms.gle/n2795F4jih9Kf792A", "_blank");
   };
 
   return (
@@ -41,11 +57,8 @@ const NavBar = () => {
 
       <div className="flex items-center">
         <button
-          type="button"
-          onClick={() => {
-            // Your early access logic here
-          }}
-          className="gap-4 px-4 py-2.5 text-white bg-indigo-600 rounded-lg mr-4"
+          onClick={openGoogleForm}
+          className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
         >
           Get Early Access
         </button>
@@ -76,11 +89,14 @@ const NavBar = () => {
             ></path>
           </svg>
         </button>
+        <Modal isOpen={showModal} onClose={handleCloseModal}>
+          <GoogleForm onClose={handleCloseModal} />
+        </Modal>
       </div>
 
       {/* Mobile menu overlay */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-white dark:bg-gray-900 overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 z-50 bg-white white:bg-white-100 ">
           <div className="p-4">
             <button
               onClick={closeMobileMenu}

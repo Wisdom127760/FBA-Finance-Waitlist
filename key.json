@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fba-finance",
+  "private_key_id": "b15d0e127fc399c90e158c73ead729bdf0683b2d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5ARNm5coBMF3L\n/wC4yQ+XFQgca3O2Jw+L4qenu4DNcPDLSEzhAE6GyzIiz/lM/mIbZ+97iqXDQ2Pv\nOqb321p/W3ViX9b9B20+/2w2gJrInYp0GlLK9lav+8q4u5OGruitr3a5STRz7mPl\nAok0GuPddsBqYJiOCK3HV656LH9ZGaCOMS2g1lmR2TN84+2EaKumrgYYGppiA9Ue\nkFUElPWCUaK2IzCguwdIjMmCifE9ILinBFtPOjj+Uvccz0NpwnSKsJKRTWMnbLnW\nRHqBh5kNmkg4PywW545XPel2oLocTwU3uI1B4DS7lHi3wg9pPuWPzaN+/Nrtjg8P\nph8Q+J5hAgMBAAECgf8znhvjtx7IJiPa1FNHO2dLfWVond0IaELrggR1GtkHzl3g\n2f4D6Sn/weyYefPSNPJP4zfrqEuHp43Xzu2MdM9TKW7Jpnk9hTed6XYv3sH7p2Ox\n8TDtyr11FzOrR0AUxp3KQrfwCn9wDoYgp2HQqpAD19Y9LVEN5Visfcet9Cxel1Eb\nkRRFHYES+WyGMYTOVQCCYjGX4lC3f5mLdSPKudKWMFcohzmRvAnfEOJof+EZ1ngQ\nzUXNIYX42pi+BXKAjt6+FwmNoSGqlBysx5voSgxjGDwHxQnujjrU5R/3SemJMyCB\n3iqIwzXzw1r5RSQaykhbJNOgoTLx9YFKMrdwS4ECgYEA2qZKHGr1Vgb3gq5zj4mV\nd1QJqaATfZ+S1WQ31O6gWhs0OUL6yRXdkQffeqNdEYnmGuwscSvF9HepwO6SplUW\nFFiTyDjBC2KtFdXXqNOr1CYRdIY2YKbknWHuSjy6k/mx1plBotp+hShxN0CVDs+T\nQmJSypGqGoczcQ3g8dKFMOECgYEA2Jty9d6t0RjwtLtZ7LXOZ43HXL0KieYqbECx\nN3kJSlmrxEWFVkfYtRRvUBWdHXbKgzINGRI3G7lQvqpcVxty7ajw0Nnyr3010ER2\nZ4CZzxlsPcL4FR9Ba0uz6HOEP1RaN9hjZybv6NKDQmimtgH3mwmamTu7YuiIHo1r\nGpwBnYECgYBte7bAZA5U9Ugad6AFz664AayU80LPNIghsf0C8jn45IZR5egNqJU5\neee9UO/ZSGOgN4JJaNHGh+TIZq2n/BMCPRhCuahwOwjQVjOWpeb0Y9t5rXqtCuSO\nqerX4XDLh8w02Ki1ExMnOgj20a/Rqr7iDrnGFQpIHkrz4S8x52gqAQKBgQCDJZt1\nQl37PB6BTu4jY/CUwkLy44J9+92zrXefHqmBWsmlDHKuytFq0fSTiIKYVFRJGwTT\nKTQ0lP9Ocdd25ievvZoQ2eUWW7k5YDpQcIyv17SxsFqEb2gsjqlfFJH9xhTZuyp0\nSh732H2gt7w4dvhz5ly0anYKbL/9v6IZeluAAQKBgQDRdAIfix1/ex/qa5r0KAhx\nzrTsQDxUzx6w4xJlrFU6qoFyBvfyjAzkVwAHuZp5EVvsWThAfpCwHf10pJDzSQMU\nodvgvIyLLXX6dbMpr0FaiiJvQx0uBNP6J5CJ/qKHbklUdtWdAlkUYm0PAcKJ6UG/\nko5hCT5LqM7VMsXWKBlUKQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "fbafinance@fba-finance.iam.gserviceaccount.com",
+  "client_id": "116716000909598285449",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fbafinance%40fba-finance.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
