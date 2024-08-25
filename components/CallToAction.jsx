@@ -19,8 +19,8 @@ function CallToAction() {
   };
 
   return (
-    <div className="flex flex-col gap-5 mt-16 text-lg font-semibold max-md:mt-10">
-      <h2 className="text-xl font-semibold subpixel-antialiased max-md:text-lg">
+    <div className="animate-fade-up flex flex-col gap-5 mt-16 text-lg font-semibold max-md:mt-10">
+      <h2 className="text-zinc-950 font-semibold text-neutral-500 subpixel-antialiased max-md:text-lg">
         Get early access to our platform
       </h2>
       <div className="flex gap-5 items-start">

@@ -32,7 +32,7 @@ function JoinUsSection() {
   return (
     <section
       id="about-us"
-      className="relative flex overflow-hidden flex-col items-center py-11 px-32 w-full text-lg bg-indigo-500 rounded-3xl max-w-[1257px] min-h-[451px] max-md:px-5 max-md:max-w-full"
+      className="animate-fade-left relative flex overflow-hidden flex-col items-center py-11 px-32 w-full text-lg bg-indigo-500 rounded-3xl max-w-[1257px] min-h-[451px] max-md:px-5 max-md:max-w-full focus:animate-pulse focus:outline-none transition-all duration-300"
     >
       <img
         src="/assets/images/JoinUsToday.svg"

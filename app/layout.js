@@ -4,13 +4,68 @@ import Provider from "@components/Provider";
 import Footer from "@components/Footer/FooterComponent";
 
 export const metadata = {
-  title: "FBA Finance",
-  description: "Building businesses,one pool at a time",
+  title: "FBA Finance | Revolutionizing Capital Access for SMEs",
+  description:
+    "FBA Finance is a fintech startup providing blockchain-based funding solutions for SMEs and startups through innovative ROSCA models on the Stellar network.",
+  keywords:
+    "FBA Finance, blockchain, ROSCA, SME funding, Stellar network, fintech, startup funding",
+  openGraph: {
+    title: "FBA Finance | Revolutionizing Capital Access for SMEs",
+    description:
+      "FBA Finance is a fintech startup providing blockchain-based funding solutions for SMEs and startups through innovative ROSCA models on the Stellar network.",
+    url: "https://www.fba.finance",
+    siteName: "FBA Finance",
+    images: [
+      {
+        url: "https://www.fba.finance/og-image.jpg", // Replace with your actual OG image URL
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FinancialService",
+              name: "FBA Finance",
+              description:
+                "A fintech startup revolutionizing capital access for SMEs and startups through blockchain-based ROSCA models.",
+              url: "https://www.fba.finance",
+              foundingDate: "2024",
+              founders: [
+                {
+                  "@type": "Person",
+                  name: "Wisdom Agunta",
+                },
+                {
+                  "@type": "Person",
+                  name: "Ochie Ojie",
+                },
+                {
+                  "@type": "Person",
+                  name: "Fanelly Manyahu",
+                },
+              ],
+              knowsAbout: [
+                "Blockchain",
+                "ROSCA",
+                "SME Funding",
+                "Stellar Network",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body>
         <Provider>
           <div className="main">

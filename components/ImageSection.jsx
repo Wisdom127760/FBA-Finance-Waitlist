@@ -9,7 +9,7 @@ function ImageSection() {
         loading="lazy"
         src="/assets/images/laptopveiw1.png"
         alt="Business funding illustration"
-        className="object-contain grow mt-4 w-full aspect-[1.66] max-md:mt-10 max-md:max-w-full "
+        className="animate-fade-up object-contain grow mt-4 w-full aspect-[1.66] max-md:mt-10 max-md:max-w-full "
         width={1000}
         height={1000}
       />

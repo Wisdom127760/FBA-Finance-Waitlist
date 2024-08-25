@@ -11,20 +11,26 @@ const LastFooter = () => {
       <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
         <ul class="list-reset flex justify-center flex-wrap text-xs md:text-sm gap-3 max-sm:hidden">
           <li>
-            <a href="#contact" class="text-black-100 hover:text-violet-600">
+            <a
+              href="#contact"
+              class="text-black-100 transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
+            >
               Contact
             </a>
           </li>
           <li class="mx-4">
             <a
               href="https://app.gitbook.com/o/8LAbjlDOettEqKUnqAst/s/qAnTc1DM8Xi6U7DJ8zm6/~/changes/1/readme/fba-finance-or-privacy-policy"
-              class="text-black-100 hover:text-violet-600"
+              class="text-black-100 transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
             >
               Privacy Policy
             </a>
           </li>
           <li>
-            <a href="#" class="text-black-100 hover:text-violet-600">
+            <a
+              href="#"
+              class="text-black-100 transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
+            >
               Terms of Use
             </a>
           </li>
