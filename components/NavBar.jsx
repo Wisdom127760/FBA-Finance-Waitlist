@@ -39,7 +39,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between w-full mb-16 pt-3">
+    <nav className="flex items-center justify-between w-full mb-10 pt-3">
       <Link href="/" className="flex items-center">
         <Image
           src="/assets/images/logo_fba.svg"
