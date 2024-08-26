@@ -1,8 +1,11 @@
 import HeroSection from "@components/HeroSection";
 import CallToAction from "@components/CallToAction";
-import ImageSection from "@components/ImageSection";
+//import ImageSection from "@components/ImageSection";
+import VideoSection from "@components/VideoSection";
 import JoinUs from "@components/JoinUs/JoinUsComponent";
 import WhoAreWe from "@components/JoinUs/WhoAreWe";
+import Steps from "@components/HowItWorks/HowItWorks";
+import TestimonialCard from "@components/Testimony/TestimonialCard";
 
 const Home = () => {
   return (
@@ -12,10 +15,12 @@ const Home = () => {
           <HeroSection />
           <CallToAction />
         </section>
-        <ImageSection />
+        <VideoSection />
       </div>
       <WhoAreWe />
       <JoinUs />
+      <Steps />
+      <TestimonialCard />
     </main>
   );
 };

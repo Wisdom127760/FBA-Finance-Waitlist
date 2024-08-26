@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "16": "^0.0.2",
+    "@heroicons/react": "^2.1.5",
     "bcrypt": "^5.1.1",
+    "framer-motion": "^11.3.30",
     "googleapis": "^142.0.0",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.2",

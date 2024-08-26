@@ -40,7 +40,7 @@ function JoinUsSection() {
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="relative flex flex-col items-center w-full">
-        <h2 className="text-center px-6 max-w-full text-4xl font-bold text-white w-[286px] max-md:pl-5">
+        <h2 className="text-center px-6 max-w-full text-4xl font-bold text-white w-[312px] max-md:pl-5">
           Join Us Today
         </h2>
         <p className="mt-3 font-semibold text-white text-center max-md:max-w-full">

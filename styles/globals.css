@@ -211,3 +211,15 @@
 .max-w-mdx {
   max-width: 48rem;
 }
+.gap-010 {
+  gap: 0.75rem;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
