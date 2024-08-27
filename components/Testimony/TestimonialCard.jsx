@@ -11,6 +11,7 @@ import { testimonials } from "./testimonialData";
 
 const TestimonialCard = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -23,26 +24,37 @@ const TestimonialCard = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextTestimonial, 10000); // Auto-advance every 10 seconds
+    let timer;
+    if (!isHovered) {
+      timer = setInterval(nextTestimonial, 10000); // Auto-advance every 10 seconds
+    }
     return () => clearInterval(timer);
-  }, []);
+  }, [isHovered]);
 
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className=" mt-24 bg-indigo-600 rounded-3xl p-8 relative overflow-hidden w-full max-w-6xl mx-auto">
+    <div
+      className="mt-24 bg-indigo-600 rounded-3xl p-8 relative overflow-hidden w-full max-w-6xl mx-auto animate-slide hover:[animation-play-state:paused]"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <BackgroundPattern />
       <Quote />
       <AnimatePresence mode="wait">
         <motion.div
-          key={`${currentTestimonial.author.name}-${currentIndex}`} // Unique key for each testimonial
+          key={`${currentTestimonial.author.name}-${currentIndex}`}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.5 }}
         >
-          <TestimonialContent>{currentTestimonial.content}</TestimonialContent>
-          <div className="pl-020 mb-8 flex items-center mt-6 mb-8">
+          <TestimonialContent>
+            <div className="h-[125px] overflow-y-auto">
+              {currentTestimonial.content}
+            </div>
+          </TestimonialContent>
+          <div className="pl-020 mb-8 flex items-center mt-014 mb-8">
             <Avatar
               src={currentTestimonial.image}
               alt={currentTestimonial.author.name}
