@@ -3,7 +3,7 @@ import StepCard from "./StepByStepGuide";
 
 const HowItWorks = () => {
   return (
-    <section className="mt-24 px-4 max-w-6xl mx-auto">
+    <section id="how-it-works" className="mt-24 px-4 max-w-6xl mx-auto">
       <h2 className="text-5xl font-bold text-center text-zinc-800 mb-6">
         How It Works?
       </h2>

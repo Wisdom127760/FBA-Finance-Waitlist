@@ -17,11 +17,17 @@ const NavPanel = ({ onLinkClick }) => {
       externalLink: false,
     },
     {
-      label: "Blog",
+      label: "Documentation",
       hasDropdown: false,
-      id: "https://fba-blog-git-main-tegaeths-projects.vercel.app/",
+      id: "https://docs.fba.finance/",
       externalLink: true,
     },
+    // {
+    //   label: "Blog",
+    //   hasDropdown: false,
+    //   id: "https://fba-blog-git-main-tegaeths-projects.vercel.app/",
+    //   externalLink: true,
+    // },
     {
       label: "Contact",
       hasDropdown: false,

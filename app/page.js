@@ -6,6 +6,8 @@ import JoinUs from "@components/JoinUs/JoinUsComponent";
 import WhoAreWe from "@components/JoinUs/WhoAreWe";
 import Steps from "@components/HowItWorks/HowItWorks";
 import TestimonialCard from "@components/Testimony/TestimonialCard";
+import FAQContainer from "@components/FAQ/FAQContainer";
+import { faqData } from "@components/FAQ/FAQ-Data";
 
 const Home = () => {
   return (
@@ -21,6 +23,7 @@ const Home = () => {
       <JoinUs />
       <Steps />
       <TestimonialCard />
+      <FAQContainer questions={faqData} />
     </main>
   );
 };

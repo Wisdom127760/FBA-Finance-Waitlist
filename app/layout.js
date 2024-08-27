@@ -4,11 +4,11 @@ import Provider from "@components/Provider";
 import Footer from "@components/Footer/FooterComponent";
 
 export const metadata = {
-  title: "FBA Finance | Revolutionizing Capital Access for SMEs",
+  title: "FBA Finance | Revolutionizing Capital Access for African SMEs",
   description:
     "FBA Finance is a fintech startup providing blockchain-based funding solutions for SMEs and startups through innovative ROSCA models on the Stellar network.",
   keywords:
-    "FBA Finance, blockchain, ROSCA, SME funding, Stellar network, fintech, startup funding",
+    "FBA Finance, SME funding options, Blockchain financing for startups, ROSCA for business, Peer-to-peer business loans, Fintech solutions for small businesses, Community-based business funding, Stellar network business applications, Alternative financing for SMEs, Decentralized finance for small business, Innovative SME credit solutions, ROSCA, SME funding, Stellar network, fintech, startup funding",
   openGraph: {
     title: "FBA Finance | Revolutionizing Capital Access for SMEs",
     description:
@@ -61,6 +61,8 @@ const RootLayout = ({ children }) => {
                 "ROSCA",
                 "SME Funding",
                 "Stellar Network",
+                "Creditworthiness for African SMEs",
+                "Community-driven funding for SMEs",
               ],
             }),
           }}

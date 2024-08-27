@@ -14,7 +14,8 @@ function HeroSection() {
         Empowering Your Financial Future.{" "}
       </h1>
       <p className="self-stretch px-3 py-1 mt-014 text-xl border-l-4 border-violet-300 border-solid border-l-violet-300 text-neutral-600 max-md:max-w-full">
-        No Equity Dilution. Flexible Repayment Terms.
+        Unlock the power of community-driven, blockchain-based financing for
+        your small business or startup.
       </p>
     </div>
   );
