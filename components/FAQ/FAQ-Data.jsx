@@ -2,112 +2,86 @@ export const faqData = [
   {
     question: "What is FBA Finance?",
     answer:
-      "FBA Finance is an innovative fintech platform that provides credit scoring, funding opportunities, and financial education for small and medium-sized enterprises (SMEs) and startups. We use a proprietary algorithm and blockchain technology to democratize access to capital and financial resources.",
+      "FBA Finance is an innovative fintech incubator that helps small and medium-sized enterprises (SMEs) and startups access capital. By leveraging blockchain technology, peer-to-peer funding networks, and smart contracts, it nurtures businesses through financial education and mentorship, accelerating their growth and profitability.",
   },
   {
     question: "How does FBA Finance work?",
     answer:
-      "We collect relevant financial and operational data from businesses, use our proprietary algorithm to generate a credit score, and then connect businesses with potential lenders through our community-driven funding pools. We also provide educational resources to help businesses improve their financial health.",
+      "FBA Finance reimagines the traditional ROSCA (Rotary Savings and Credit Association) model by integrating smart contracts on the Stellar network. It enables businesses to access community-driven funding while receiving mentorship and strategic guidance. The platform's innovative structure also connects businesses to potential investors and partners, fostering an ecosystem of mutual growth and financial sustainability.",
   },
   {
     question: "Who can use FBA Finance?",
     answer:
-      "FBA Finance is designed for SMEs and startups looking to access funding, improve their creditworthiness, or gain financial education. We cater to businesses across various sectors and stages of growth.",
+      "FBA Finance is designed for profitable SMEs and startups seeking access to capital, financial education, and community-driven support. It is open to businesses across various industries and at different stages of growth, focusing on those who need equitable access to financial resources.",
   },
   {
     question: "How does FBA Finance's credit scoring system work?",
     answer:
-      "Our proprietary algorithm considers various factors including payment history, debt levels, cash flow, business performance, community involvement, and sustainability practices. This comprehensive approach provides a more holistic view of a business's creditworthiness.",
+      "FBA Finance uses a comprehensive credit scoring algorithm based on various factors such as payment history, debt levels, and business performance. This holistic approach provides a reliable measure of a business’s creditworthiness, making it easier for them to access funding opportunities.",
   },
   {
     question: "Is my data safe when I input it for credit scoring?",
     answer:
-      "Absolutely. We employ bank-level encryption and adhere to strict data protection regulations to ensure the security and privacy of your information. For more details, please visit our Security Policy page.",
+      "Yes. FBA Finance uses bank-level encryption and adheres to strict data protection regulations. This ensures that all information submitted to the platform remains confidential and secure.",
   },
   {
     question: "How often is my credit score updated?",
     answer:
-      "Your credit score is updated in real-time whenever you input new data. We also perform regular reviews to ensure the accuracy of our scores.",
+      "FBA Finance updates credit scores in real-time as new data is provided by businesses, as well as through in-platform behaviors and activities. Regular reviews are also conducted to maintain the accuracy and reliability of the scores.",
   },
   {
     question: "Can I improve my credit score?",
     answer:
-      "Yes! We provide personalized recommendations and educational resources to help you improve your credit score. Check out our Credit Improvement Guide for more information.",
+      "Yes! FBA Finance offers personalized recommendations and resources to help businesses improve their credit scores, ensuring better access to funding and investment opportunities.",
   },
   {
     question: "What are community-driven funding pools?",
     answer:
-      "Community-driven funding pools are a modern take on traditional rotating savings and credit associations (ROSCAs). They allow businesses to access capital from a network of lenders, often at more favorable terms than traditional banking.",
+      "Community-driven funding pools are a modern take on traditional ROSCAs. Businesses can participate in a decentralized network where they access capital from peers and investors through a blockchain-backed platform, often at better terms than traditional banks.",
   },
   {
     question: "How do I participate in a funding pool?",
     answer:
-      "To participate, you need to create an account, complete your business profile, and receive a credit score. You can then browse available pools or create your own. Visit our Funding Pool Guide for step-by-step instructions.",
+      "To join a funding pool, businesses must create an account, complete their profile, and receive a credit score. Once completed, they can browse available funding pools or create their own to raise capital.",
   },
   {
     question: "Is it safe to lend or borrow through FBA Finance?",
     answer:
-      "We implement various safety measures, including smart contracts on the Stellar blockchain, to ensure transparency and security in all transactions. However, as with all investments, there are risks involved. We encourage all users to read our Risk Disclosure carefully.",
-  },
-  {
-    question: "What kind of educational resources does FBA Finance offer?",
-    answer:
-      "We offer a wide range of resources including articles, video tutorials, webinars, and interactive courses on topics such as financial management, credit improvement, and sustainable business practices. Check out our Learning Center for more.",
-  },
-  {
-    question: "Are these educational resources free?",
-    answer:
-      "Most of our basic educational resources are free for all registered users. We also offer premium courses and personalized coaching for a fee.",
+      "Yes. FBA Finance uses smart contracts on the Stellar blockchain to ensure security, transparency, and fairness. However, as with any financial transaction, businesses are advised to review the risks involved.",
   },
   {
     question: "What blockchain does FBA Finance use?",
     answer:
-      "We utilize the Stellar blockchain for its speed, low transaction costs, and built-in decentralized exchange.",
+      "FBA Finance uses the Stellar blockchain due to its speed, low transaction costs, and built-in decentralized exchange, ensuring efficient and secure financial operations.",
   },
   {
     question: "Do I need to understand blockchain to use FBA Finance?",
     answer:
-      "No, our platform is designed to be user-friendly regardless of your technical knowledge. The blockchain technology works behind the scenes to ensure security and transparency.",
+      "No. FBA Finance is designed to be user-friendly. The blockchain technology operates in the background to provide security and transparency, allowing businesses to focus on their growth without needing in-depth technical knowledge.",
   },
   {
     question: "What does it cost to use FBA Finance?",
     answer:
-      "Basic account creation and credit scoring are free. We charge a small fee for successful funding matches and for certain premium services. Please see our Pricing Page for detailed information.",
+      "Basic features like account creation and credit scoring are free. Fees are only charged for successful funding matches and premium services such as advanced educational tools or personalized coaching.",
   },
   {
     question: "How does FBA Finance make money?",
     answer:
-      "We generate revenue through fees on successful funding matches, premium educational services, and data insights (always anonymized and aggregated) provided to partners.",
-  },
-  {
-    question: "What is a Payment Gateway?",
-    answer:
-      "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations, and online wallet players.",
-  },
-  {
-    question:
-      "Do I need to pay to Instapay even when there is no transaction going on in my business?",
-    answer:
-      "No, Instapay typically operates on a pay-as-you-go model. You only pay fees when you process transactions.",
+      "FBA Finance generates revenue through fees on successful funding matches, premium educational services, and anonymized data insights provided to partners.",
   },
   {
     question: "How can I get support if I have issues?",
     answer:
-      "We offer support through multiple channels including email, chat, and phone. Visit our Support Center for contact information and FAQs.",
-  },
-  {
-    question: "Can I provide feedback or suggestions?",
-    answer:
-      "Absolutely! We value user feedback. Please use the feedback form in your account dashboard or email us at feedback@fbafinance.com.",
+      "FBA Finance offers customer support via multiple channels, including email, chat, and phone. Businesses can access the support center for assistance or consult the FAQ section for quick solutions.",
   },
   {
     question: "Is FBA Finance regulated?",
     answer:
-      "Yes, we comply with relevant financial regulations in the jurisdictions where we operate. For specific regulatory information, please see our Compliance Page.",
+      "Yes, FBA Finance complies with financial regulations in the regions where it operates. The platform ensures all users meet legal requirements, including KYC (Know Your Customer) and KYB (Know Your Business) protocols.",
   },
   {
     question: "How does FBA Finance handle data privacy?",
     answer:
-      "We take data privacy very seriously and comply with global data protection standards. Please refer to our Privacy Policy for detailed information on how we collect, use, and protect your data.",
+      "FBA Finance prioritizes data privacy and complies with global data protection standards. User data is encrypted and securely stored, with strict protocols in place to prevent unauthorized access.",
   },
 ];
