@@ -2,6 +2,7 @@ import "@styles/globals.css";
 import Nav from "@components/NavBar";
 import Provider from "@components/Provider";
 import Footer from "@components/Footer/FooterComponent";
+import ScrollButton from "@components/ScrollButton";
 
 export const metadata = {
   title: "FBA Finance | Revolutionizing Capital Access for African SMEs",
@@ -81,6 +82,7 @@ const RootLayout = ({ children }) => {
             <Footer />
           </main>
         </Provider>
+        <ScrollButton />
       </body>
     </html>
   );

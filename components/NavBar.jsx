@@ -55,7 +55,7 @@ const NavBar = () => {
         <NavPanel />
       </div>
 
-      <div className="flex items-center">
+      <div className="flex space-x-4 items-center">
         <button
           onClick={openGoogleForm}
           className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
@@ -63,9 +63,10 @@ const NavBar = () => {
           Get Early Access
         </button>
         <button
+          data-collapse-toggle="navbar-default"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           type="button"
-          className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 text-sm rounded-lg lg:hidden hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200 dark:text-gray-600 dark:hover:bg-indigo-600 dark:hover:text-gray-200 dark:focus:ring-gray-600"
           aria-controls="mobile-menu"
           aria-expanded={mobileMenuOpen}
         >
@@ -96,11 +97,11 @@ const NavBar = () => {
 
       {/* Mobile menu overlay */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-white white:bg-white-100 ">
+        <div className="lg:hidden fixed inset-x-0 top-0 z-50 bg-white white:bg-white-100 ">
           <div className="p-4">
             <button
               onClick={closeMobileMenu}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-200 dark:text-gray-400 dark:hover:text-gray-300"
             >
               <svg
                 className="w-6 h-6"

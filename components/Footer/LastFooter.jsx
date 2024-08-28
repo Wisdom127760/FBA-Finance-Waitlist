@@ -2,7 +2,7 @@ import React from "react";
 
 const LastFooter = () => {
   return (
-    <div class="container mx-auto mt-9 flex flex-wrap items-center justify-between">
+    <div class="container mx-auto mt-9 flex flex-wrap items-center justify-between md:justify-center">
       <div class="w-full md:w-1/2 sm:text-center md:text-center md:mb-0 mb-8">
         <p class="text-xs text-black-100 md:text-sm">
           &copy; 2024 FBA Finance. All Rights Reserved

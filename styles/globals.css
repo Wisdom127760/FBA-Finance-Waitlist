@@ -69,6 +69,10 @@
   .main {
     padding: 0;
   }
+  .max-md\:flex-col {
+    flex-direction: column;
+    row-gap: normal;
+}
 }
 
 /* Tailwind Styles */

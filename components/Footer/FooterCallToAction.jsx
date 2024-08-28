@@ -17,7 +17,7 @@ const FooterCallToAction = () => {
     window.open("https://forms.gle/n2795F4jih9Kf792A", "_blank");
   };
   return (
-    <div className="flex gap-5 items-start max-sm:hidden">
+    <div className="flex items-start">
       <button
         onClick={openGoogleForm}
         className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"

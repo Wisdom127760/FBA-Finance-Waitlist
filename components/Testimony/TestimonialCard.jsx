@@ -50,7 +50,7 @@ const TestimonialCard = () => {
           transition={{ duration: 0.5 }}
         >
           <TestimonialContent>
-            <div className="h-[125px] overflow-y-auto">
+            <div className="min-h-[125px] max-h-full overflow-y-auto md:h-[150px] md:overflow-y-auto lg:h-[160px] lg:overflow-y-auto">
               {currentTestimonial.content}
             </div>
           </TestimonialContent>

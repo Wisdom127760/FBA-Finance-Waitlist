@@ -732,6 +732,10 @@ select{
   bottom: 0px;
   left: 0px;
 }
+.inset-x-0{
+  left: 0px;
+  right: 0px;
+}
 .top-0{
   top: 0px;
 }
@@ -749,6 +753,12 @@ select{
 }
 .left-4{
   left: 1rem;
+}
+.bottom-5{
+  bottom: 1.25rem;
+}
+.right-5{
+  right: 1.25rem;
 }
 .z-50{
   z-index: 50;
@@ -877,11 +887,8 @@ select{
 .h-2{
   height: 0.5rem;
 }
-.h-\[400px\]{
-  height: 400px;
-}
-.h-\[200px\]{
-  height: 200px;
+.h-\[125px\]{
+  height: 125px;
 }
 .h-12{
   height: 3rem;
@@ -889,14 +896,8 @@ select{
 .h-8{
   height: 2rem;
 }
-.h-\[150px\]{
-  height: 150px;
-}
-.h-\[120px\]{
-  height: 120px;
-}
-.h-\[125px\]{
-  height: 125px;
+.h-\[130px\]{
+  height: 130px;
 }
 .max-h-\[80vh\]{
   max-height: 80vh;
@@ -904,11 +905,17 @@ select{
 .max-h-96{
   max-height: 24rem;
 }
+.max-h-full{
+  max-height: 100%;
+}
 .min-h-\[451px\]{
   min-height: 451px;
 }
 .min-h-screen{
   min-height: 100vh;
+}
+.min-h-\[125px\]{
+  min-height: 125px;
 }
 .w-full{
   width: 100%;
@@ -1002,9 +1009,6 @@ select{
 }
 .max-w-5xl{
   max-width: 64rem;
-}
-.max-w-4xl{
-  max-width: 56rem;
 }
 .max-w-\[1273px\]{
   max-width: 1273px;
@@ -1126,6 +1130,11 @@ select{
 .gap-2\.5{
   gap: 0.625rem;
 }
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1135,11 +1144,6 @@ select{
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-x-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .self-start{
   align-self: flex-start;
@@ -1600,6 +1604,11 @@ select{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-300{
   transition-duration: 300ms;
 }
@@ -1672,6 +1681,10 @@ select{
   .main {
     padding: 0;
   }
+  .max-md\:flex-col {
+    flex-direction: column;
+    row-gap: normal;
+}
 }
 
 /* Tailwind Styles */
@@ -2130,23 +2143,34 @@ select{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-110:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-indigo-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-100:hover{
+.hover\:bg-indigo-400:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white\/30:hover{
   background-color: rgb(255 255 255 / 0.3);
 }
 
-.hover\:text-gray-600:hover{
+.hover\:bg-indigo-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+}
+
+.hover\:text-gray-200:hover{
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .hover\:text-violet-400:hover{
@@ -2215,9 +2239,9 @@ select{
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-gray-200:focus{
+.focus\:ring-indigo-200:focus{
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(199 210 254 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-indigo-500:focus{
@@ -2227,14 +2251,24 @@ select{
 
 @media (prefers-color-scheme: dark){
 
+  .dark\:text-gray-600{
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+  }
+
   .dark\:text-gray-400{
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 
-  .dark\:hover\:bg-gray-700:hover{
+  .dark\:hover\:bg-indigo-600:hover{
     --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+    background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+  }
+
+  .dark\:hover\:text-gray-200:hover{
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:text-gray-300:hover{
@@ -2270,6 +2304,10 @@ select{
     flex-direction: column;
   }
 
+  .max-md\:gap-4{
+    gap: 1rem;
+  }
+
   .max-md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -2294,6 +2332,10 @@ select{
 
   .max-sm\:hidden{
     display: none;
+  }
+
+  .max-sm\:gap-0{
+    gap: 0px;
   }
 }
 
@@ -2322,6 +2364,10 @@ select{
     margin-top: 4rem;
   }
 
+  .md\:h-\[150px\]{
+    height: 150px;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -2330,13 +2376,29 @@ select{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+
   .md\:gap-5{
     gap: 1.25rem;
+  }
+
+  .md\:overflow-y-auto{
+    overflow-y: auto;
   }
 
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-center{
@@ -2352,6 +2414,11 @@ select{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -2364,8 +2431,20 @@ select{
     display: none;
   }
 
+  .lg\:h-\[150px\]{
+    height: 150px;
+  }
+
+  .lg\:h-\[160px\]{
+    height: 160px;
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:overflow-y-auto{
+    overflow-y: auto;
   }
 }
 
