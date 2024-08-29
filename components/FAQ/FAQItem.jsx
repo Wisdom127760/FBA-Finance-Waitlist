@@ -1,5 +1,6 @@
 // FAQItem.jsx is a functional component that renders a question and answer.
 //It uses the useState hook to manage whether the answer is open or closed, and the AnimatePresence component from Framer Motion to allow for exit animations.
+"use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FAQAnswer from "./FAQAnswer";

@@ -10,8 +10,6 @@ const CreatePrompt = () => {
     prompt: "",
     tag: "",
   });
-
-  crea;
 };
 
 export default CreatePrompt;

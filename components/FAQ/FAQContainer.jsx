@@ -1,6 +1,6 @@
-// FAQContainer.jsx is a functional component that takes in an array of questions and maps over them to render a FAQItem component for each question. It also renders a title for the FAQ section.
 "use client";
 import React from "react";
+import Link from "next/link";
 import FAQItem from "./FAQItem";
 
 const FAQContainer = ({ questions }) => (
@@ -8,9 +8,39 @@ const FAQContainer = ({ questions }) => (
     <h1 className="text-5xl font-bold text-center text-zinc-800 mb-6">
       Frequently Asked Questions
     </h1>
-    <div className="max-h-96 overflow-y-scroll ">
+    <div className="mb-6">
+      <p className="text-center text-indigo-600 text-3xl mb-4">
+        Still have questions ?{" "}
+      </p>
+      <p className="text-center ">
+        Visit our{"  "}
+        {"  "}
+        <span className="rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <Link
+            href="/faq"
+            className="text-black-100 transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
+          >
+            FAQ Page
+          </Link>
+        </span>
+        {"  "}
+        {"  "}
+        or{"  "}
+        {"  "}
+        <span className="rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <a
+            href="mailto:support@fba.finance"
+            className="text-black-100 transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
+          >
+            Contact Us
+          </a>
+        </span>
+      </p>
+    </div>
+
+    <div className="max-h-96 ">
       <div className="space-y-4">
-        {questions.map((q, index) => (
+        {questions.slice(0, 4).map((q, index) => (
           <FAQItem key={index} question={q.question} answer={q.answer} />
         ))}
       </div>
