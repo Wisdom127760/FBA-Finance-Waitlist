@@ -2,7 +2,7 @@ import React from "react";
 
 const LastFooter = () => {
   return (
-    <div class="container mx-auto mt-9 flex flex-wrap items-center justify-between md:justify-center">
+    <div class="container mx-auto mt-9 flex flex-wrap items-center justify-between">
       <div class="w-full md:w-1/2 sm:text-center md:text-center md:mb-0 mb-8">
         <p class="text-xs text-black-100 md:text-sm">
           &copy; 2024 FBA Finance. All Rights Reserved
@@ -20,7 +20,8 @@ const LastFooter = () => {
           </li>
           <li class="mx-4">
             <a
-              href="https://app.gitbook.com/o/8LAbjlDOettEqKUnqAst/s/qAnTc1DM8Xi6U7DJ8zm6/~/changes/1/readme/fba-finance-or-privacy-policy"
+              href="https://docs.fba.finance/legal-and-compliance/privacy-policy"
+              target="_blank"
               class="text-black-100 transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
             >
               Privacy Policy
@@ -28,7 +29,8 @@ const LastFooter = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="https://docs.fba.finance/legal-and-compliance/terms-of-use"
+              target="_blank"
               class="text-black-100 transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
             >
               Terms of Use
