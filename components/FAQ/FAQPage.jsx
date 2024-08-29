@@ -31,7 +31,7 @@ const FAQPage = ({ questions = [] }) => {
           />
 
           {/* Text Content */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center px-4 py-4 text-center">
+          <div className="absolute inset-0 flex flex-col justify-center items-center px-6 py-6 text-center">
             <h1 className="text-white text-4xl font-bold mb-4">
               Frequently Asked Questions
             </h1>

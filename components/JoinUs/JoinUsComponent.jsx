@@ -1,5 +1,6 @@
 import React from "react";
 import FeatureCard from "./FeaturesCard";
+import Link from "next/link";
 
 const features = [
   {
@@ -52,7 +53,9 @@ function JoinUsSection() {
           ))}
         </div>
         <button className="gap-4 px-4 py-2.5 mt-6 max-w-full font-semibold bg-white rounded-lg text-zinc-800 w-[425px] transition duration-300 ease-in-out transform hover:scale-105">
-          Find out more about business loans
+          <Link href="https://docs.fba.finance" target="_blank">
+            Find Out More
+          </Link>
         </button>
       </div>
     </section>

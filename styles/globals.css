@@ -212,6 +212,10 @@
 .gap-50 {
   gap: 17.25rem;
 }
+
+.gap-36{
+  gap: 7.25rem;
+}
 .max-w-mdx {
   max-width: 48rem;
 }
