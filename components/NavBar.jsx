@@ -75,7 +75,7 @@ const NavBar = () => {
         <div className="flex space-x-4 items-center">
           <button
             onClick={openGoogleForm}
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
           >
             Get Early Access
           </button>

@@ -20,7 +20,7 @@ const FooterCallToAction = () => {
     <div className="flex gap-5 items-start max-sm:hidden md:grid-36 lg:grid-36">
       <button
         onClick={openGoogleForm}
-        className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
+        className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
       >
         Get Early Access
       </button>
