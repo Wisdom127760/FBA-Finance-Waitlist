@@ -6,7 +6,7 @@ function WhoAreWe() {
       id="whoweare"
       className="pt-12 flex flex-col items-center justify-center "
     >
-      <div className="animate-fade-right flex flex-col px-6 pt-6 pb-11 w-full max-w-5xl bg-fuchsia-200 rounded-3xl border-4 border-white border-dashed text-zinc-800 max-md:px-5 max-md:max-w-full">
+      <div className="z-10 animate-fade-down flex flex-col px-6 pt-6 pb-11 w-full max-w-5xl bg-fuchsia-200 rounded-tl-3xl rounded-br-3xl border-4 border-white border-dashed text-zinc-800 max-md:px-5 max-md:max-w-full">
         <h2 className="self-center px-7 max-w-full text-4xl font-bold border-l-4 border-violet-400 border-solid w-[312px] max-md:px-5">
           Who are we?
         </h2>

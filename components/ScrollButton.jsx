@@ -35,7 +35,7 @@ const ScrollButtons = () => {
       {!isAtTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className=" bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-110"
+          className=" animate-bounce bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-110"
         >
           <svg
             className="w-6 h-6 inline-block"
@@ -63,7 +63,7 @@ const ScrollButtons = () => {
               behavior: "smooth",
             })
           }
-          className="  bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-110"
+          className="  animate-bounce bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-110"
         >
           <svg
             className="w-6 h-6 inline-block"

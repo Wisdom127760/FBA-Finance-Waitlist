@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"components/NavPanelWrapper.jsx -> ./NavPanel\":{\"id\":\"components/NavPanelWrapper.jsx -> ./NavPanel\",\"files\":[\"static/chunks/_app-pages-browser_components_NavPanel_jsx.js\"]}}"

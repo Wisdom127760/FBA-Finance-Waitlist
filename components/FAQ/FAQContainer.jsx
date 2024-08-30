@@ -9,7 +9,7 @@ const FAQContainer = ({ questions }) => (
       Frequently Asked Questions
     </h1>
     <div className="mb-6">
-      <p className="text-center text-indigo-600 text-3xl mb-4">
+      <p className="text-center font-medium text-indigo-600 text-3xl mb-4">
         Still have questions ?{" "}
       </p>
       <p className="text-center ">

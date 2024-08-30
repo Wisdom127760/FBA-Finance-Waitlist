@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const NavPanel = ({ onLinkClick }) => {
+  const [isMounted, setIsMounted] = useState(false);
+  const router = typeof window !== "undefined" ? useRouter() : null;
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const navItems = [
     {
       label: "About Us",
@@ -13,7 +21,7 @@ const NavPanel = ({ onLinkClick }) => {
     {
       label: "How It Works",
       hasDropdown: false,
-      id: "how-it-works",
+      id: "whoweare",
       externalLink: false,
     },
     {
@@ -22,12 +30,6 @@ const NavPanel = ({ onLinkClick }) => {
       id: "https://docs.fba.finance/",
       externalLink: true,
     },
-    // {
-    //   label: "Blog",
-    //   hasDropdown: false,
-    //   id: "https://fba-blog-git-main-tegaeths-projects.vercel.app/",
-    //   externalLink: true,
-    // },
     {
       label: "Contact",
       hasDropdown: false,
@@ -41,22 +43,28 @@ const NavPanel = ({ onLinkClick }) => {
       onLinkClick();
     }
 
-    if (!item.externalLink) {
+    if (!item.externalLink && isMounted && router) {
       e.preventDefault();
-      const element = document.getElementById(item.id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+      if (router.pathname !== "/") {
+        // If not on the homepage, navigate to homepage with the hash
+        router.push(`/#${item.id}`);
+      } else {
+        // If already on homepage, just scroll to the element
+        const element = document.getElementById(item.id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
       }
     }
   };
 
   return (
-    <nav className="flex overflow-hidden flex-col justify-center self-stretch px-9 py-6 bg-white rounded-[44px] text-zinc-800 max-md:px-5 max-md:max-w-full">
+    <nav className="flex overflow-hidden flex-col justify-center self-stretch px-9 py-4 backdrop-blur-xl border-stone-100 rounded-[44px] text-zinc-800 max-md:px-5 max-md:max-w-full">
       <ul className="flex flex-wrap gap-7 items-start max-md:max-w-full">
         {navItems.map((item, index) => (
           <li key={index}>
             <Link
-              href={item.externalLink ? item.id : `#${item.id}`}
+              href={item.externalLink ? item.id : `/#${item.id}`}
               className="flex gap-1 items-center transition duration-300 ease-in-out transform hover:scale-105 hover:text-violet-400"
               onClick={(e) => handleClick(e, item)}
               target={item.externalLink ? "_blank" : undefined}

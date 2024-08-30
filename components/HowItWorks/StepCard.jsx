@@ -1,15 +1,20 @@
 import React from "react";
 
-function StepCard({ stepNumber, title, description }) {
+function StepCard({ stepNumber, title, description, icon: Icon }) {
   return (
-    <article className="flex flex-col min-w-[240px] w-[270px]">
-      <header className="flex flex-col items-start self-start font-semibold text-center">
-        <div className="px-2 text-base border-l-4 border-violet-400 border-solid border-l-violet-400 text-neutral-600 w-[80px]">
-          STEP {stepNumber}
+    <article className="flex flex-col bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
+      <header className="flex items-start mb-4">
+        <div className="bg-violet-100 p-3 rounded-full mr-4 flex-shrink-0">
+          <Icon size={24} className="text-violet-600" />
         </div>
-        <h2 className="mt-2 text-lg text-zinc-800">{title}</h2>
+        <div>
+          <div className="text-sm font-semibold text-violet-600 mb-1">
+            STEP {stepNumber}
+          </div>
+          <h2 className="text-xl font-bold text-zinc-800 mb-2">{title}</h2>
+          <p className="text-base text-zinc-600">{description}</p>
+        </div>
       </header>
-      <p className="mt-2 text-base text-zinc-800">{description}</p>
     </article>
   );
 }

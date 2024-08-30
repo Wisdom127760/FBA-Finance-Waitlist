@@ -65,11 +65,6 @@ export const faqData = [
       "Basic features like account creation and credit scoring are free. Fees are only charged for successful funding matches and premium services such as advanced educational tools or personalized coaching.",
   },
   {
-    question: "How does FBA Finance make money?",
-    answer:
-      "FBA Finance generates revenue through fees on successful funding matches, premium educational services, and anonymized data insights provided to partners.",
-  },
-  {
     question: "How can I get support if I have issues?",
     answer:
       "FBA Finance offers customer support via multiple channels, including email, chat, and phone. Businesses can access the support center for assistance or consult the FAQ section for quick solutions.",

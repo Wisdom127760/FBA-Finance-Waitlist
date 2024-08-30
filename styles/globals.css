@@ -36,8 +36,9 @@
   width: 100%;
   height: 100%;
   top: 0;
-  opacity: 0.4;
+  opacity: var(--grid-opacity, 0.4); /* Use dynamic opacity with fallback */
   filter: invert(1);
+  transition: opacity 0.3s ease; /* Smooth transition for fade-out */
 }
 
 .gradient {
@@ -230,4 +231,46 @@
   100% {
     transform: translateX(0);
   }
+}
+.-mt-024 {
+  margin-top: -4rem;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes slide-in-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in-down {
+  animation: slide-in-down 0.5s ease-out forwards;
+}
+.onscrollNav{
+  padding-left: 130px;
+  padding-right: 130px;
+  width: 124%;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

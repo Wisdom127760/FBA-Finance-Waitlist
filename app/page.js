@@ -21,6 +21,7 @@ const Home = () => {
       </div>
       <WhoAreWe />
       <JoinUs />
+
       <Steps />
       <TestimonialCard />
       <FAQContainer questions={faqData} />

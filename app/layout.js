@@ -3,6 +3,7 @@ import Nav from "@components/NavBar";
 import Provider from "@components/Provider";
 import Footer from "@components/Footer/FooterComponent";
 import ScrollButton from "@components/ScrollButton";
+import ScrollEffect from "@components/ScrollEffect"; // Import client-side scroll behavior
 
 export const metadata = {
   title: "FBA Finance | Revolutionizing Capital Access for African SMEs",
@@ -18,7 +19,7 @@ export const metadata = {
     siteName: "FBA Finance",
     images: [
       {
-        url: "https://www.fba.finance/og-image.jpg", // Replace with your actual OG image URL
+        url: "https://www.fba.finance/og-image.jpg",
         width: 1200,
         height: 630,
       },
@@ -71,18 +72,18 @@ const RootLayout = ({ children }) => {
       </head>
       <body>
         <Provider>
+          <ScrollEffect /> {/* Scroll behavior in a client-side component */}
           <div className="main">
             <div className="gradient" />
           </div>
-
           <main className="app">
             <Nav />
             {children}
-
             <Footer />
           </main>
         </Provider>
-        <ScrollButton />
+        <ScrollButton />{" "}
+        {/* This can remain here, but ensure it is a client component */}
       </body>
     </html>
   );
