@@ -56,7 +56,7 @@ const NavBar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="container mx-auto flex justify-between items-center py-4 px-4">
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/images/logo_fba.svg"
