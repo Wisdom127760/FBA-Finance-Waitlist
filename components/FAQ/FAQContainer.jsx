@@ -4,7 +4,7 @@ import Link from "next/link";
 import FAQItem from "./FAQItem";
 
 const FAQContainer = ({ questions }) => (
-  <div className="mt-24 max-w-6xl mx-auto p-4">
+  <div className="mt-06 max-w-6xl mx-auto p-4">
     <h1 className="text-5xl font-bold text-center text-zinc-800 mb-6">
       Frequently Asked Questions
     </h1>

@@ -21,7 +21,7 @@ const FAQPage = ({ questions = [] }) => {
   }
 
   return (
-    <div className="mt-4 md:mt-16 w-full max-w-[1273px] max-md:mt-10 max-md:max-w-full">
+    <div className="mt-06 md:mt-06 w-full max-w-[1273px] max-md:mt-10 max-md:max-w-full">
       <div className="max-w-6xl mx-auto relative ">
         <div className="mb-8 relative flex overflow-hidden flex-col items-center py-11 px-8 w-full text-lg rounded-3xl max-w-[1257px] min-h-[350px] max-md:px-5 max-md:max-w-full">
           <img
