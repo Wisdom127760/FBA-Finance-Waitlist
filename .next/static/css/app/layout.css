@@ -1023,8 +1023,8 @@ select{
 .max-w-\[1225px\]{
   max-width: 1225px;
 }
-.max-w-\[1283px\]{
-  max-width: 1283px;
+.max-w-7xl{
+  max-width: 80rem;
 }
 .max-w-\[1204px\]{
   max-width: 1204px;
@@ -1040,9 +1040,6 @@ select{
 }
 .max-w-3xl{
   max-width: 48rem;
-}
-.flex-auto{
-  flex: 1 1 auto;
 }
 .flex-shrink-0{
   flex-shrink: 0;
@@ -1175,9 +1172,6 @@ select{
 }
 .gap-1{
   gap: 0.25rem;
-}
-.gap-10{
-  gap: 2.5rem;
 }
 .gap-9{
   gap: 2.25rem;
@@ -1449,6 +1443,14 @@ select{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .px-32{
   padding-left: 8rem;
   padding-right: 8rem;
@@ -1478,12 +1480,6 @@ select{
 }
 .pr-3{
   padding-right: 0.75rem;
-}
-.pr-10{
-  padding-right: 2.5rem;
-}
-.pb-16{
-  padding-bottom: 4rem;
 }
 .pt-16{
   padding-top: 4rem;
@@ -2302,6 +2298,10 @@ select{
   top: 50%;
   transform: translateY(-50%);
 }
+.socials-start {
+  justify-content: flex-start;
+  margin-top: -64px;
+}
 .hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2334,6 +2334,10 @@ select{
 .hover\:text-violet-400:hover{
   --tw-text-opacity: 1;
   color: rgb(167 139 250 / var(--tw-text-opacity));
+}
+.hover\:text-gray-900:hover{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .hover\:text-blue-800:hover{
   --tw-text-opacity: 1;

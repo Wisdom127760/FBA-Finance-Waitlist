@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const StayTuned = () => {
   return (
-    <div className="flex flex-col self-start text-lg text-zinc-800">
+    <div className="flex flex-col self-start socials-start text-lg text-zinc-800">
       <div className="flex gap-1 items-start font-semibold">
         <div className="grow self-end mt-19 max-md:mt-10">Stay Tuned</div>
         <img
