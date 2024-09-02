@@ -807,6 +807,9 @@ select{
 .mt-16{
   margin-top: 4rem;
 }
+.ml-2{
+  margin-left: 0.5rem;
+}
 .ml-5{
   margin-left: 1.25rem;
 }
@@ -998,6 +1001,9 @@ select{
 }
 .w-8{
   width: 2rem;
+}
+.w-\[30\%\]{
+  width: 30%;
 }
 .min-w-\[240px\]{
   min-width: 240px;
@@ -2483,6 +2489,14 @@ select{
 }
 @media (min-width: 640px){
 
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:text-center{
     text-align: center;
   }
@@ -2495,6 +2509,10 @@ select{
 
   .md\:mt-16{
     margin-top: 4rem;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-\[150px\]{
@@ -2530,6 +2548,11 @@ select{
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media (min-width: 1024px){

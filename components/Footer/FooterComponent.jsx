@@ -30,12 +30,12 @@ const Footer = () => {
       title: "About",
       items: [
         {
-          text: "What is FBA Finance all about?",
-          url: "https://docs.fba.finance/introduction/quickstart",
+          text: "What is FBA Finance?",
+          url: "https://docs.fba.finance/introduction/whats-fba-finance",
         },
         {
           text: "The problem we're solving",
-          url: "https://fbafin.com/problem",
+          url: "https://docs.fba.finance/introduction/problem-statements",
         },
         {
           text: "Our mission and vision",
@@ -52,11 +52,11 @@ const Footer = () => {
       items: [
         {
           text: "Understanding ROSCAs",
-          url: "https://docs.fba.finance/understanding-roscas/editor",
+          url: "https://docs.fba.finance/understanding-roscas/what-is-a-rosca-system",
         },
         {
-          text: "Traditional vs. FBA Finance’s ROSCAs",
-          url: "https://docs.fba.finance/understanding-roscas/markdown",
+          text: "Traditional vs. FBA ROSCAs",
+          url: "https://docs.fba.finance/understanding-roscas/traditional-roscas-vs.-fba-finances-approach",
         },
         {
           text: "Pool Management",
@@ -93,8 +93,14 @@ const Footer = () => {
           text: "Education and Mentorship",
           url: "#",
         },
-        { text: "FBA Affiliate Program", url: "https://fbafin.com/affiliate" },
-        { text: "Legal & Compliance Center", url: "#" },
+        {
+          text: "FBA Affiliate Program",
+          url: "https://docs.fba.finance/fba-affiliate-program/how-it-works",
+        },
+        {
+          text: "The FBA Algorithm",
+          url: "https://docs.fba.finance/the-fba-algorithm/what-is-the-fba-algorithm",
+        },
       ],
     },
   ];

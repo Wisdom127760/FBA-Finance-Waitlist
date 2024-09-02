@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "./Logo";
-import Address from "./Address";
-import TryFBAFinance from "./TryFBAFinance";
-import GetStartedButton from "./GetStartedButton";
+//import Address from "./Address";
+//import TryFBAFinance from "./TryFBAFinance";
+//import GetStartedButton from "./GetStartedButton";
 import FooterCallToAction from "./FooterCallToAction";
 
 const FooterBottom = () => {
@@ -13,7 +13,7 @@ const FooterBottom = () => {
         {/* <Address /> */}
         {/* <TryFBAFinance />
         <GetStartedButton /> */}
-        <div className="px-38" />
+        <div className="px-42" />
         <FooterCallToAction />
       </div>
     </div>

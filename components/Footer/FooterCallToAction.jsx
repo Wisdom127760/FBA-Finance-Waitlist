@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Modal from "@components/Modal"; // Assuming you have a Modal component
 import GoogleForm from "@app/create-form/GoogleForm";
+import { ArrowRight } from "lucide-react";
 
 const FooterCallToAction = () => {
   const [showModal, setShowModal] = useState(false);
@@ -23,6 +24,7 @@ const FooterCallToAction = () => {
         className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
       >
         Get Early Access
+        <ArrowRight size={24} className="inline-block ml-2" />
       </button>
       <Modal isOpen={showModal} onClose={handleCloseModal}>
         <GoogleForm onClose={handleCloseModal} />
