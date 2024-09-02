@@ -42,7 +42,8 @@ const StayTuned = () => {
           />
         </Link>
         <Link
-          href="https://discord.gg/hUz6FXFB"
+          //href="https://discord.gg/hUz6FXFB"
+          href="#"
           className="flex gap-2 flex-center transform hover:scale-105"
           target="_blank"
         >
