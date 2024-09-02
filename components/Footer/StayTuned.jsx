@@ -45,7 +45,7 @@ const StayTuned = () => {
           //href="https://discord.gg/hUz6FXFB"
           href="#"
           className="flex gap-2 flex-center transform hover:scale-105"
-          target="_blank"
+          //target="_blank"
         >
           <Image
             src="/assets/images/ic_baseline-discord.svg"
