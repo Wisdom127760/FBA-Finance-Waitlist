@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "FBA Finance",
     images: [
       {
-        url: "https://www.fba.finance/og-image.jpg",
+        src: "https://www.fba.finance/assets/images/logo_fba.svg", // Full URL for the image src
         width: 1200,
         height: 630,
       },
