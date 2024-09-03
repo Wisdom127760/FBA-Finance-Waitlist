@@ -3,7 +3,10 @@ import Nav from "@components/NavBar";
 import Provider from "@components/Provider";
 import Footer from "@components/Footer/FooterComponent";
 import ScrollButton from "@components/ScrollButton";
-import ScrollEffect from "@components/ScrollEffect"; // Import client-side scroll behavior
+import ScrollEffect from "@components/ScrollEffect";
+import Script from "next/script";
+
+// Import client-side scroll behavior
 
 export const metadata = {
   title: "FBA Finance | Revolutionizing Capital Access for African SMEs",
@@ -69,6 +72,13 @@ const RootLayout = ({ children }) => {
             }),
           }}
         />
+        <Script type="text/javascript" id="microsoft_clarity">
+          {`(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nxkvhq5o0t");`}
+        </Script>
       </head>
       <body>
         <Provider>
