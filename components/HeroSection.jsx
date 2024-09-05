@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <div className="animate-fade-right flex flex-col items-start w-full font-bold max-md:mt-10 max-md:max-w-full">
+    <div className="animate-fade-right mt-16 flex flex-col items-start w-full font-bold max-md:mt-8 max-md:max-w-full">
       <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
         Welcome to FBA{" "}
         <span className="font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
