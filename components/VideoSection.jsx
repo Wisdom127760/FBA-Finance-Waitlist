@@ -15,14 +15,15 @@ function VideoSection() {
 
   return (
     <section className="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
+      {/* <div className="rounded-"> */}
       <video
         ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
-        className="animate-fade-up object-contain grow mt-4 w-full aspect-[0] max-md:mt-10 max-md:max-w-full rounded-3xl overflow-hidden"
-        poster="/assets/images/laptopveiw1.png" // Use your original image as a fallback
+        className="animate-fade-up object-contain mt-4 w-full max-md:mt-10 max-md:max-w-full rounded-2xl overflow-hidden"
+        poster="/assets/images/laptopveiw1.png"
       >
         <source src="/assets/videos/FBAFinanceVideo(1).mp4" type="video/mp4" />
         <source
@@ -31,6 +32,7 @@ function VideoSection() {
         />
         Your browser does not support the video tag.
       </video>
+      {/* </div> */}
     </section>
   );
 }
