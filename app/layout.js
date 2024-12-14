@@ -79,6 +79,20 @@ const RootLayout = ({ children }) => {
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "nxkvhq5o0t");`}
         </Script>
+
+        {/* Google Analytics Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZSSLYYX8VJ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZSSLYYX8VJ');
+          `}
+        </Script>
       </head>
       <body>
         <Provider>
